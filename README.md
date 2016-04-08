@@ -13,13 +13,13 @@ Install `aoi` is very simple via NPM ( node > 4.0 )
 
 ## Roadmap
 
-[x] SCSS support (default)
-[x] Typescript support (default)
-[x] Source Map when using `watch` mode
-[] Project config file `.aoi.js` or `.aoi.json`
-[] ReactJS support (optional)
-[] `watch` command work correctly
-[] `watch` command support with built-in server
+- [x] SCSS support (default)
+- [x] Typescript support (default)
+- [x] Source Map when using `watch` mode
+- [] Project config file `.aoi.js` or `.aoi.json`
+- [] ReactJS support (optional)
+- [] `watch` command work correctly
+- [] `watch` command support with built-in server
 
 ## Commands
 
