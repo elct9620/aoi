@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "My personal front-end tool for speed up initialize project.",
   "main": "index.js",
+  "bin": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
   },
   "author": "蒼時弦也",
   "license": "Apache-2.0",
@@ -15,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/elct9620/aoi/issues"
   },
-  "homepage": "https://github.com/elct9620/aoi#readme"
+  "homepage": "https://github.com/elct9620/aoi#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.3.3",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "webpack": "^1.12.14"
+  }
 }
