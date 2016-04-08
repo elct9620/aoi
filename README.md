@@ -1,4 +1,4 @@
-AOI (蒼)
+AOI (蒼)[![bitHound Overall Score](https://www.bithound.io/github/elct9620/aoi/badges/score.svg)](https://www.bithound.io/github/elct9620/aoi)
 =======
 
 This my personal front-end bootstrap tool inspired by [egoist/tooling](https://github.com/egoist/tooling/).

@@ -4,16 +4,16 @@
  * The tool for fast bootstrap front-end environment.
  */
 
-'use strict'
+'use strict';
 
-let webpack = require('webpack')
-let process = require('process')
+let webpack = require('webpack');
+let process = require('process');
 
-let helper = require('../lib/helper')
+let helper = require('../lib/helper');
 
-let watchConfig = require('../config/webpack.watch')
-let sassConfig = require('../config/webpack.sass')
-let typescriptConfig = require('../config/webpack.typescript')
+let watchConfig = require('../config/webpack.watch');
+let sassConfig = require('../config/webpack.sass');
+let typescriptConfig = require('../config/webpack.typescript');
 
 module.exports = function(options) {
     let config = helper.applyConfig([
@@ -22,8 +22,9 @@ module.exports = function(options) {
         watchConfig,
         sassConfig,
         typescriptConfig
-    ], options)
+    ], options);
 
+    // TODO: Add watch or dev-server support
     webpack(config, function(err, stats) {
         if(err) {
             console.err(err)
@@ -33,5 +34,5 @@ module.exports = function(options) {
                 chunks: false
             }))
         }
-    })
+    });
 }

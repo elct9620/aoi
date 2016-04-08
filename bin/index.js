@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-'use strict'
+'use strict';
 
 /**
  * AOI (蒼)
@@ -8,14 +8,14 @@
  */
 
 let program = require('commander');
-let process = require('process')
-let pkg = require('../package.json')
+let process = require('process');
+let pkg = require('../package.json');
 
-let watchCommand = require('../commands/watch')
-let buildCommand = require('../commands/build')
+let watchCommand = require('../commands/watch');
+let buildCommand = require('../commands/build');
 
 program
-    .version(pkg.version)
+    .version(pkg.version);
 
 program
     .command('build')
@@ -25,7 +25,7 @@ program
     .option('-d, --dest [dest]', 'Generated file destination, default is ./build')
     .option('-so, --style-output [styleOutput]', 'The extract style file dest, default is style.css')
     .option('-p, --public [publicPath]', 'Public path, defaut is ./')
-    .action(buildCommand)
+    .action(buildCommand);
 
 program
     .command('watch')
@@ -36,8 +36,8 @@ program
     .option('-d, --dest [dest]', 'Generated file destination, default is ./build')
     .option('-so, --style-output [styleOutput]', 'The extract style file dest, default is style.css')
     .option('-p, --public [publicPath]', 'Public path, defaut is ./')
-    .action(watchCommand)
+    .action(watchCommand);
 
-program.parse(process.argv)
+program.parse(process.argv);
 
 
