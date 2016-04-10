@@ -24,7 +24,7 @@ module.exports = function(options) {
         typescriptConfig
     ], options);
 
-    let compiler = webpack(config)
+    let compiler = webpack(config);
     compiler.watch({}, function(err, stats) {
         if(err) {
             console.err(err);
