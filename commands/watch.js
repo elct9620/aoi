@@ -24,8 +24,8 @@ module.exports = function(options) {
         typescriptConfig
     ], options);
 
-    // TODO: Add watch or dev-server support
-    webpack(config, function(err, stats) {
+    let compiler = webpack(config)
+    compiler.watch({}, function(err, stats) {
         if(err) {
             console.err(err);
         }  else {

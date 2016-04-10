@@ -16,10 +16,10 @@ Install `aoi` is very simple via NPM ( node > 4.0 )
 - [x] SCSS support (default)
 - [x] Typescript support (default)
 - [x] Source Map when using `watch` mode
-- [ ] Project config file `.aoi.js` or `.aoi.json`
+- [ ] Project config file `.aoi.js` support
 - [ ] ReactJS support (optional)
-- [ ] `watch` command work correctly
-- [ ] `watch` command support with built-in server
+- [x] `watch` command support
+- [ ] `serve` command support
 
 ## Commands
 
@@ -36,3 +36,9 @@ Generate optimized assets file (.js and .css)
 > $ aoi watch [options]
 
 Keep watching file change, and regenerate file.
+
+### Server
+
+> $ aoi serve [options]
+
+Start webpack development server with live-reload feature.
