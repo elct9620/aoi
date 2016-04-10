@@ -25,12 +25,12 @@ module.exports = function(options) {
 
     webpack(config, function(err, stats) {
         if(err) {
-            console.err(err)
+            console.err(err);
         }  else {
             console.log(stats.toString({
                 color: true,
                 chunks: false
-            }))
+            }));
         }
     });
-}
+};
