@@ -19,7 +19,7 @@ Install `aoi` is very simple via NPM ( node > 4.0 )
 - [ ] Project config file `.aoi.js` support
 - [ ] ReactJS support (optional)
 - [x] `watch` command support
-- [ ] `serve` command support
+- [x] `serve` command support
 
 ## Commands
 
