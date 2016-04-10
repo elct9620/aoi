@@ -25,4 +25,4 @@ module.exports = function(config, options) {
     config.resolve.extensions.push('tsx');
 
     return config;
-}
+};

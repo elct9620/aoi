@@ -6,10 +6,8 @@
 
 'use strict';
 
-let webpack = require('webpack');
-let process = require('process');
-
 let helper = require('../lib/helper');
+let process = require('process');
 
 let watchConfig = require('../config/webpack.watch');
 let sassConfig = require('../config/webpack.sass');
@@ -24,8 +22,7 @@ module.exports = function(options) {
         typescriptConfig
     ], options);
 
-    let compiler = webpack(config);
-    compiler.watch({}, function(err, stats) {
+    helper.getCompiler(config).watch({}, function(err, stats) {
         if(err) {
             console.err(err);
         }  else {

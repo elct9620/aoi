@@ -27,4 +27,4 @@ module.exports = function(config, options) {
     config.plugins.push(extractCSS);
 
     return config;
-}
+};
