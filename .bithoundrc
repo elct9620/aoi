@@ -1,0 +1,12 @@
+{
+  "critics": {
+    "lint": {"engine": "eslint"}
+  },
+  "dependencies": {
+    "unused-ignores": [
+      "typescript",
+      "*-loader",
+      "node-sass"
+    ]
+  }
+}
