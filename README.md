@@ -17,9 +17,11 @@ Install `aoi` is very simple via NPM ( node > 4.0 )
 - [x] Typescript support (default)
 - [x] Source Map when using `watch` mode
 - [ ] Project config file `.aoi.js` support
-- [ ] ReactJS support (optional)
+- [ ] ReactJS bootstrap template support
 - [x] `watch` command support
 - [x] `serve` command support
+- [ ] ESLint check support
+- [ ] Jest Test Framework support
 
 ## Commands
 
