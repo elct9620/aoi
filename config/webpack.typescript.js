@@ -17,12 +17,12 @@ module.exports = function(config, options) {
     config.resolve.extensions = config.resolve.extensions || [];
 
     config.module.loaders.push({
-        test: /\.tsx?$/,
-        loader: 'ts-loader'
+        test: /\.ts(x?)$/,
+        loaders: ['ts-loader']
     });
 
-    config.resolve.extensions.push('ts');
-    config.resolve.extensions.push('tsx');
+    config.resolve.extensions.push('.ts');
+    config.resolve.extensions.push('.tsx');
 
     return config;
 };
