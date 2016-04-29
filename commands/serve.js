@@ -13,7 +13,6 @@ let WebpackDevServer = require('webpack-dev-server');
 
 let watchConfig = require('../config/webpack.watch');
 let sassConfig = require('../config/webpack.sass');
-let typescriptConfig = require('../config/webpack.typescript');
 
 module.exports = function(options) {
     let config = helper.applyConfig([
@@ -22,7 +21,7 @@ module.exports = function(options) {
         helper.hotReplacmentConfig,
         watchConfig,
         sassConfig,
-        typescriptConfig
+        helper.getJavascriptLoader(options.jsLoader)
     ], options);
 
     let dest = options.dest || "build";

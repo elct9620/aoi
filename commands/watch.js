@@ -11,7 +11,6 @@ let process = require('process');
 
 let watchConfig = require('../config/webpack.watch');
 let sassConfig = require('../config/webpack.sass');
-let typescriptConfig = require('../config/webpack.typescript');
 
 module.exports = function(options) {
     let config = helper.applyConfig([
@@ -19,7 +18,7 @@ module.exports = function(options) {
         helper.resolveConfig,
         watchConfig,
         sassConfig,
-        typescriptConfig
+        helper.getJavascriptLoader(options.jsLoader)
     ], options);
 
     helper.getCompiler(config).watch({}, function(err, stats) {

@@ -21,7 +21,8 @@ function sharedOptions(program) {
         .option('-o, --output [output]', 'Output filename, default is bundle.js')
         .option('-O, --style-output [styleOutput]', 'The extract style file dest, default is style.css')
         .option('-d, --dest [dest]', 'Destination folder of generated file, default is ./build')
-        .option('-P, --public [publicPath]', 'Public path, defaut is ./');
+        .option('-P, --public [publicPath]', 'Public path, defaut is ./')
+        .option('-L, --jsLoader [loader]', 'Which javascript loader to use, babel or typescript, default is typescript');
 
     return program;
 }
