@@ -22,7 +22,8 @@ function sharedOptions(program) {
         .option('-O, --style-output [styleOutput]', 'The extract style file dest, default is style.css')
         .option('-d, --dest [dest]', 'Destination folder of generated file, default is ./build')
         .option('-P, --public [publicPath]', 'Public path, defaut is ./')
-        .option('-L, --jsLoader [loader]', 'Which javascript loader to use, babel or typescript, default is typescript');
+        .option('-L, --jsLoader [loader]', 'Which javascript loader to use, babel or typescript, default is typescript')
+        .option('-SL, --stylelint', 'Enable stylelint');
 
     return program;
 }

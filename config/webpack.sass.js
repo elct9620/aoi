@@ -14,15 +14,25 @@ module.exports = function(config, options) {
 
     let output = options.styleOutput || "style.css";
     let extractCSS = new ExtractTextPlugin(output);
+    let stylelintEnable = options.stylelint || false;
 
     config.module = config.module || {};
     config.module.loaders = config.module.loaders || [];
+    config.module.preLoaders = config.module.preLoaders || [];
     config.plugins = config.plugins || [];
 
     config.module.loaders.push({
-        test: /\.scss$/,
+        test: /\.(scss|sass)$/,
         loader: extractCSS.extract(["style-loader"], ["css", "sass"])
     });
+
+    // TODO: Auto enable stylelint if config file exists
+    if(stylelintEnable) {
+        config.module.preLoaders.push({
+            test: /\.(scss|sass)$/,
+            loader: 'stylelint'
+        })
+    }
 
     config.plugins.push(extractCSS);
 
