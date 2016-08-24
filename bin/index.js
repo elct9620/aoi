@@ -23,7 +23,6 @@ function sharedOptions(program) {
         .option('-d, --dest [dest]', 'Destination folder of generated file, default is ./build')
         .option('-P, --public [publicPath]', 'Public path, defaut is ./')
         .option('-L, --jsLoader [loader]', 'Which javascript loader to use, babel or typescript, default is typescript')
-        .option('-SL, --stylelint', 'Enable stylelint');
 
     return program;
 }
