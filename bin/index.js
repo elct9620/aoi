@@ -23,6 +23,7 @@ function sharedOptions(program) {
         .option('-d, --dest [dest]', 'Destination folder of generated file, default is ./build')
         .option('-P, --public [publicPath]', 'Public path, defaut is ./')
         .option('-L, --jsLoader [loader]', 'Which javascript loader to use, babel or typescript, default is typescript')
+        .option('-t, --template [engine]', 'The template engine used for generate html, default disabled.')
 
     return program;
 }
