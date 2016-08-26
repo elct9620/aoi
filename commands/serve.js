@@ -22,6 +22,7 @@ module.exports = function(options) {
         watchConfig,
         sassConfig,
         helper.getJavascriptLoader(options.jsLoader)
+        helper.getTemplateEngine(options.template)
     ], options);
 
     let dest = options.dest || "build";

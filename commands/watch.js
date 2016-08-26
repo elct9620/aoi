@@ -18,7 +18,8 @@ module.exports = function(options) {
         helper.resolveConfig,
         watchConfig,
         sassConfig,
-        helper.getJavascriptLoader(options.jsLoader)
+        helper.getJavascriptLoader(options.jsLoader),
+        helper.getTemplateEngine(options.template)
     ], options);
 
     helper.getCompiler(config).watch({}, function(err, stats) {
