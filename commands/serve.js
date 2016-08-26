@@ -21,7 +21,7 @@ module.exports = function(options) {
         helper.hotReplacmentConfig,
         watchConfig,
         sassConfig,
-        helper.getJavascriptLoader(options.jsLoader)
+        helper.getJavascriptLoader(options.jsLoader),
         helper.getTemplateEngine(options.template)
     ], options);
 
