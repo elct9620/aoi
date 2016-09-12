@@ -1,6 +1,6 @@
 {
   "name": "aoi",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "My personal front-end tool for speed up initialize project.",
   "main": "index.js",
   "bin": "bin/index.js",
