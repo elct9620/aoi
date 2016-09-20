@@ -14,6 +14,7 @@ let pkg = require('../package.json');
 let watchCommand = require('../commands/watch');
 let buildCommand = require('../commands/build');
 let serveCommand = require('../commands/serve');
+let statsCommand = require('../commands/stats');
 
 function sharedOptions(program) {
     program
@@ -44,6 +45,10 @@ sharedOptions(program.command('serve'))
     .option('-p, --port [port]', 'The serve port, default is 8080')
     .option('-b, --content-base [contentBase]', 'The server root, default is same as destination folder.')
     .action(serveCommand);
+
+sharedOptions(program.command('stats'))
+    .description('Generate wepback stats')
+    .action(statsCommand);
 
 program.parse(process.argv);
 
