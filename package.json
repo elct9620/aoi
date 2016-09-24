@@ -1,6 +1,6 @@
 {
   "name": "aoi",
-  "version": "0.1.0",
+  "version": "0.2.0-pre",
   "description": "My personal front-end tool for speed up initialize project.",
   "main": "index.js",
   "bin": "bin/index.js",
@@ -34,7 +34,7 @@
     "slm-loader": "^0.2.3",
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.1",
-    "typescript": "^1.8.9",
+    "typescript": "^2.0.0",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },

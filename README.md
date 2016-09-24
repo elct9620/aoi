@@ -1,5 +1,3 @@
-AOI (蒼)[![bitHound Overall Score](https://www.bithound.io/github/elct9620/aoi/badges/score.svg)](https://www.bithound.io/github/elct9620/aoi)
-=======
 
 This my personal front-end bootstrap tool inspired by [egoist/tooling](https://github.com/egoist/tooling/).
 
@@ -16,7 +14,7 @@ Install `aoi` is very simple via NPM ( node > 4.0 )
 - [x] SCSS support (default)
 - [x] Typescript support (default)
 - [x] Source Map when using `watch` mode
-- [ ] Project config file `.aoi.js` support
+- [x] Project config file `aoi.js` support
 - [ ] ReactJS bootstrap template support
 - [x] `watch` command support
 - [x] `serve` command support
@@ -44,3 +42,9 @@ Keep watching file change, and regenerate file.
 > $ aoi serve [options]
 
 Start webpack development server with live-reload feature.
+
+### Stats
+
+> $ aoi stats [options]
+
+Output Webpack analytics json for debug performance.
