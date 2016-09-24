@@ -17,10 +17,6 @@ module.exports = function(config, options) {
     config.module.loaders = config.module.loaders || [];
     config.plugins = config.plugins || [];
 
-    config.entry = config.entry
-                         .concat(glob.sync("**/*.html.slim"))
-                         .concat(glob.sync("**/*.html.slm"));
-
     config.module.loaders.push({
         test: /\.sl(i?)m$/,
         loaders: ["file?name=[path][name]", "slm"]
