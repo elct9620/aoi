@@ -17,8 +17,6 @@ module.exports = function(config, options) {
     config.module.loaders = config.module.loaders || [];
     config.plugins = config.plugins || [];
 
-    config.entry = config.entry.concat(glob.sync("**/*.html"));
-
     config.module.loaders.push({
         test: /\.htm(l?)$/,
         loaders: ["file?name=[path][name].html"]
